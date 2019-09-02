@@ -1,0 +1,66 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container{
+  border:1px solid #ddd;
+  width:230px;
+  margin:50px auto;
+  padding:10px;
+  text-align:center;
+  background-color: rgb(255, 248, 198);
+border-radius: 9px;
+}
+.container .result-x,.container .result-o {
+  border: 1px solid #ccc;
+  border-radius:6px; 
+  height: 30px;
+  margin: 20px auto;
+  width:200px;
+  overflow: hidden;
+  text-align: center;
+  margin-top:3px;
+}
+.container .result-x span,.container .result-o span {
+  display:inline-block;
+  line-height: 1.8;
+}
+.container .result-x span:nth-of-type(2),.container .result-o span:nth-of-type(2) {
+  display:inline-block;
+  padding:0 25px 0 25px;
+}
+.container .result-x span:nth-of-type(1),.container .result-o span:nth-of-type(1){
+  border-right: 1px solid #ccc;
+  padding-right:10px;
+}
+.container .result-x span:nth-of-type(3),.container .result-o span:nth-of-type(3){
+  border-left:1px solid #ccc;
+  padding-left:10px;
+}
+.container button{
+  display: inline-block;
+  padding:5px;
+  width:60px;
+  height:55px;
+  margin-bottom:10px;
+  font-size: 38px;
+  font-weight:600;
+  text-align: center;
+  color:darkseagreen;
+  background-color: #ddd;
+  text-transform: uppercase;
+}
+.container button:not(:last-of-type){
+  margin-right:5px;
+}
+.container .restart ,.container .reset{
+  display: inline-block;
+  padding:8px;
+  background-color: chartreuse;
+  width:44%;
+  cursor: pointer;
+}
+.container .restart{
+  margin:10px 10px 0 0;
+}
